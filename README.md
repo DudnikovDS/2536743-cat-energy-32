@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Дудников](https://up.htmlacademy.ru/adaptive/32/user/2536743).
-* Наставник: `Антон Варнавский`.
+* Наставник: [Антон Варнавский] (https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
