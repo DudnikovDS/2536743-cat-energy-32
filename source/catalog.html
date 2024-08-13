@@ -12,8 +12,8 @@
 <body class="page__body body">
 
   <header class="body__header header">
-    <a class="header__logo logo" href="index.html">
-      <img class="logo__picture" src="img.svg" alt="Логотип картинка." width="33" height="38" tabindex="-1" aria-label="hidden">
+    <a class="header__logo logo" href="index.html" tabindex="-1" aria-label="hidden">
+      <img class="logo__picture" src="img.svg" alt="Логотип картинка." width="33" height="38">
     </a>
     <a class="header__logo logo" href="index.html">
       <img class="logo__picture logo__picture--text" src="img.svg" alt="Логотип текст." width="101" height="18">
@@ -193,7 +193,7 @@
             <span class="catalog-add-item__quantity">1 упаковка (100 г)</span>
             <span class="catalog-add-item__price">200 ₽</span>
           </p>
-          <button class="catalog-item-add__button button button--primary" type="button">Заказать</button>
+          <button class="catalog-add-item__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog-add__item catalog-add-item">
           <h3 class="catalog-add-item__title">Питьевая вода</h3>
@@ -201,7 +201,7 @@
             <span class="catalog-add-item__quantity">5 литров</span>
             <span class="catalog-add-item__price">50 ₽</span>
           </p>
-          <button class="catalog-item-add__button button button--primary" type="button">Заказать</button>
+          <button class="catalog-add-item__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog-add__item catalog-add-item">
           <h3 class="catalog-add-item__title">Молоко</h3>
@@ -209,7 +209,7 @@
             <span class="catalog-add-item__quantity">1 литр</span>
             <span class="catalog-add-item__price">100 ₽</span>
           </p>
-          <button class="catalog-item-add__button button button--primary" type="button">Заказать</button>
+          <button class="catalog-add-item__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog-add__item catalog-add-item">
           <h3 class="catalog-add-item__title">Витамины</h3>
@@ -217,7 +217,7 @@
             <span class="catalog-add-item__quantity">1 упаковка (30 г)</span>
             <span class="catalog-add-item__price">300 ₽</span>
           </p>
-          <button class="catalog-item-add__button button button--primary" type="button">Заказать</button>
+          <button class="catalog-add-item__button button button--primary" type="button">Заказать</button>
         </li>
       </ul>
     </section>
@@ -229,13 +229,13 @@
 
     <section class="main-inner__subscribe subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>
-      <p class="promo__slogan">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="promo__form promo-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="promo-form__label">
+      <p class="subscribe__slogan">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="subscribe-form__label">
           <span class="visually-hidden">Введите свой e-mail</span>
-          <input class="promo-form__email" type="email" name="email" required>
+          <input class="subscribe-form__email" type="email" name="email" required>
         </label>
-        <button class="promo-form__button button button--primary" type="button">Подписаться</button>
+        <button class="subscribe-form__button button button--primary" type="button">Подписаться</button>
       </form>
 
     </section>
