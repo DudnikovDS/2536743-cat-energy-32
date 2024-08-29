@@ -8,3 +8,8 @@
   }
 }
 
+@mixin font-title-params {
+  font-family: $font-secondary;
+  color: $font-color-secondary;
+  font-weight: 400;
+}
