@@ -1,0 +1,15 @@
+@mixin font-face($font-family, $src, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: $src;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
+}
+
+@mixin font-title-params {
+  font-family: $font-secondary;
+  color: $font-color-secondary;
+  font-weight: 400;
+}

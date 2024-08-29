@@ -1,0 +1,19 @@
+.catalog-item__title {
+  font-family: $font-secondary;
+  color: $font-color-fourth;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-item__properties {
+  font-size: 12px;
+  line-height: 16px;
+  list-style-type: none;
+}
+
+.catalog-item__more-description {
+  font-size: 12px;
+  line-height: 16px;
+}

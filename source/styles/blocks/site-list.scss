@@ -1,0 +1,16 @@
+.site-list {
+  list-style-type: none;
+}
+
+.site-list__link {
+  font-family: $font-secondary;
+  color: $font-color-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+.site-list--hidden {
+  display: none;
+}
