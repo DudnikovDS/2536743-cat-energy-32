@@ -9,13 +9,44 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 
 .programs__link {
+  position: relative;
+  padding-right: 58px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 24px;
+    height: 12px;
+    transform: translateY(-50%);
+    background-image: url("../../icons/stack.svg#arrow");
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform-origin: left center;
+  }
+
+  &:hover::after {
+    transform: translateY(-50%) scaleX(1.33);
+  }
 }

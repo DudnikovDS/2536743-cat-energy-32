@@ -1,0 +1,15 @@
+.main-navigation__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#button-open-menu");
+  cursor: pointer;
+}
+
+.main-navigation__button--close {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#button-close");
+}
