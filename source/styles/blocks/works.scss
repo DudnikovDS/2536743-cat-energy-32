@@ -1,4 +1,6 @@
 .works__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -8,4 +10,67 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+.works__item {
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    @include pseudo(60px, 60px);
+    background-color: #68b738;
+    left: 0;
+
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.works__item--leaf {
+  &::before {
+    background-image: url("../../icons/stack.svg#leaf");
+    background-size: 25px 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.works__item--drink {
+  &::before {
+    background-image: url("../../icons/stack.svg#drink");
+    background-size: 26px 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.works__item--tableware {
+  &::before {
+    background-image: url("../../icons/stack.svg#tableware");
+    background-size: 25px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.works__item--clock {
+  &::before {
+    background-image: url("../../icons/stack.svg#clock");
+    background-size: 26px 31px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
