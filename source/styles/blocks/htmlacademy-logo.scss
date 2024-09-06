@@ -1,0 +1,35 @@
+.htmlacademy-logo {
+  display: block;
+}
+
+.htmlacademy-logo__picture {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #444444;
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+}
+
+.htmlacademy-logo__picture-text {
+  display: block;
+  width: 113px;
+  height: 20px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy-text");
+}
+
+.htmlacademy-logo:hover .htmlacademy-logo__picture {
+  background-color: #68b738;
+}
+
+.htmlacademy-logo:active .htmlacademy-logo__picture {
+  opacity: 0.3;
+}
+
+.htmlacademy-logo:focus-visible .htmlacademy-logo__picture {
+  background-color: #68b738;
+}
+
+.htmlacademy-logo:active .htmlacademy-logo__picture-text {
+  opacity: 0.3;
+}

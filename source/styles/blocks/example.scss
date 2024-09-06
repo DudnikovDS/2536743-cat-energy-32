@@ -56,9 +56,46 @@
 }
 
 .example__button {
+  position: relative;
   display: block;
   width: 4px;
   height: 100px;
+  margin-left: 100px;
   padding: 0;
+  background-color: #666666;
   border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+  }
+}
+
+.example__button-arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example__button:hover > .example__button-arrows rect {
+  stroke: #68b738;
+}
+
+.example__button:hover > .example__button-arrows path {
+  fill: #68b738;
+}
+
+.example__button:active > .example__button-arrows rect {
+  stroke: #5eaa2f;
+}
+
+.example__button:active > .example__button-arrows path {
+  fill: #5eaa2f;
 }

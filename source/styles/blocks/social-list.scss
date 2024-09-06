@@ -1,3 +1,35 @@
 .social-list {
   list-style-type: none;
 }
+
+.social-list__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    background-color: #68b738;
+  }
+}
+
+.social-list__link--vk {
+  mask-image: url("../../icons/stack.svg#vk");
+}
+
+
+.social-list__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.social-list__link--tg {
+  mask-image: url("../../icons/stack.svg#telegram");
+}
