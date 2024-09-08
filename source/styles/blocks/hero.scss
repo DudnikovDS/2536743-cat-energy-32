@@ -9,10 +9,22 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    color: $font-color-secondary;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    color: $font-color-secondary;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
