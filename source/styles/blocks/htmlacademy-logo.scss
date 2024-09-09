@@ -10,12 +10,12 @@
   mask-image: url("../../icons/stack.svg#logo-htmlacademy");
 }
 
-.htmlacademy-logo__picture-text {
+.htmlacademy-logo__text {
   display: block;
-  width: 113px;
-  height: 20px;
-  background-color: #666666;
-  mask-image: url("../../icons/stack.svg#logo-htmlacademy-text");
+  font-family: $font-primary;
+  color: $font-color-primary;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .htmlacademy-logo:hover .htmlacademy-logo__picture {
@@ -30,6 +30,6 @@
   background-color: #68b738;
 }
 
-.htmlacademy-logo:active .htmlacademy-logo__picture-text {
+.htmlacademy-logo:active .htmlacademy-logo__text {
   opacity: 0.3;
 }

@@ -12,7 +12,16 @@
   }
 }
 
-.catalog-add-item__description {
+.catalog-add-item__quantity {
+  line-height: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-add-item__price {
   line-height: 14px;
 
   @media (min-width: 768px) {
