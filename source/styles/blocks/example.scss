@@ -75,27 +75,51 @@
     background-color: #5eaa2f;
     opacity: 0.6;
   }
-}
 
-.example__button-arrows {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  &:focus-visible {
+    background-color: #68b738;
+  }
 
-.example__button:hover > .example__button-arrows rect {
-  stroke: #68b738;
-}
+  &::before {
+    @include pseudo(40px, 40px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+  }
 
-.example__button:hover > .example__button-arrows path {
-  fill: #68b738;
-}
+  &:hover::before {
+    border-color: #68b738;
+  }
 
-.example__button:active > .example__button-arrows rect {
-  stroke: #5eaa2f;
-}
+  &:active::before {
+    border-color: #5eaa2f;
+  }
 
-.example__button:active > .example__button-arrows path {
-  fill: #5eaa2f;
+  &:focus-visible::before {
+    border-color: #68b738;
+  }
+
+  &::after {
+    @include pseudo(24px, 18px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#example-button-arrows");
+  }
+
+  &:hover::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+
+  &:focus-visible::after {
+    background-color: #68b738;
+  }
 }
