@@ -1,21 +1,69 @@
 .programs__item {
+  position: relative;
   background-color: #f2f2f2;
 }
 
 .programs__title {
+  padding-left: 80px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 
 .programs__link {
+  position: relative;
+  padding-right: 58px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    @include pseudo(24px, 12px);
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../icons/stack.svg#arrow");
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform-origin: left center;
+  }
+
+  &:hover::after {
+    transform: translateY(-50%) scaleX(1.33);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs__item--slim {
+  &::before {
+    @include pseudo(50px, 53px);
+    background-image: url("../../icons/stack.svg#cat-slim");
+  }
+}
+
+.programs__item--pro {
+  &::before {
+    @include pseudo(67px, 50px);
+    background-image: url("../../icons/stack.svg#cat-pro");
+  }
 }

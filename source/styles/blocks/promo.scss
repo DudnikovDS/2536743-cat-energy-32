@@ -1,5 +1,12 @@
 .promo {
+  display: relative;
+  min-height: 290px;
   background-color: $bg-color-opacity;
+
+  &::before {
+    @include pseudo (80px, 83px);
+    background-image: url("../../icons/stack.svg#gift");
+  }
 }
 
 .promo__description {

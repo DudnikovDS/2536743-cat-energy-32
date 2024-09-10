@@ -5,15 +5,48 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog-item__properties {
   font-size: 12px;
   line-height: 16px;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .catalog-item__more-description {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-item--more {
+  position: relative;
+
+  &::before {
+    @include pseudo(30px, 30px);
+    top: 10px;
+    left: 40px;
+    background-image: url("../../icons/stack.svg#plus");
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }

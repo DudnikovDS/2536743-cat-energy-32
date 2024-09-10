@@ -1,0 +1,31 @@
+.main-navigation__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#button-open-menu");
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+}
+
+.main-navigation__button--close {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#button-close");
+}
+
+.main-navigation__button--hidden {
+  display: none;
+}
