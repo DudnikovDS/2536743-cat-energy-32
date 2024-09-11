@@ -1,3 +1,17 @@
+.main-navigation__list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+    transform: none;
+  }
+}
+
 .main-navigation__button {
   display: block;
   width: 24px;
@@ -6,6 +20,10 @@
   background-color: transparent;
   background-image: url("../../icons/stack.svg#button-open-menu");
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -24,8 +42,4 @@
   width: 18px;
   height: 18px;
   background-image: url("../../icons/stack.svg#button-close");
-}
-
-.main-navigation__button--hidden {
-  display: none;
 }
