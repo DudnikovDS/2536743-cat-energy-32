@@ -6,7 +6,7 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -15,7 +15,7 @@
 .catalog-add-item__quantity {
   line-height: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
@@ -24,7 +24,7 @@
 .catalog-add-item__price {
   line-height: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
