@@ -46,16 +46,18 @@
 
   <main class="main">
 
-    <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/hero-fhoto-desktop@1x.png 1x, images/hero-fhoto-desktop@2x.png 2x" width="552" height="499" type="image/png">
-        <source media="(min-width: 768px)" srcset="images/hero-fhoto-tablet@1x.png 1x, images/hero-fhoto-tablet@2x.png 2x" width="709" height="609" type="image/png">
-        <img class="hero__picture" src="images/hero-fhoto-mobile@1x.png" alt="Банка еды для кота Cat energy PRO курица." width="280" height="270" srcset="images/hero-fhoto-mobile@2x.png 2x">
-      </picture>
-      <a class="hero__button button button--primary" href="#">Подобрать программу</a>
-    </section>
+    <div class="hero-wrapper">
+      <section class="hero">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/hero-fhoto-desktop@1x.png 1x, images/hero-fhoto-desktop@2x.png 2x" width="552" height="499" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/hero-fhoto-tablet@1x.png 1x, images/hero-fhoto-tablet@2x.png 2x" width="709" height="609" type="image/png">
+          <img class="hero__picture" src="images/hero-fhoto-mobile@1x.png" alt="Банка еды для кота Cat energy PRO курица." width="280" height="270" srcset="images/hero-fhoto-mobile@2x.png 2x">
+        </picture>
+        <a class="hero__button button button--primary" href="#">Подобрать программу</a>
+      </section>
+    </div>
 
     <section class="programs">
       <h2 class="visually-hidden">Программы</h2>
@@ -99,41 +101,43 @@
       </ul>
     </section>
 
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
-        и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="example__stats">
-        <li class="example__item example__item--decorated">
-          <span class="example__meaning">5 КГ</span>
-          <span class="example__parameter">снижение веса</span>
-        </li>
-        <li class="example__item example__item--decorated">
-          <span class="example__meaning">60 ДНЕЙ</span>
-          <span class="example__parameter">затрачено времени</span>
-        </li>
-      </ul>
-      <p class="example__cost">
-        <span class="example__cost-parameter">Затраты на питание:</span>
-        <span class="example__cost-meaning">15 000 РУБ.</span>
-      </p>
-      <div class="example__compare">
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" alt="Кот до нашего питания." width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x">
-        </picture>
-        <button class="example__button" type="button">
-          <span class="visually-hidden">Посмотреть разницу</span>
-        </button>
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" alt="Кот после нашего питания." width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x">
-        </picture>
-      </div>
-    </section>
+    <div class="example-wrapper">
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
+          и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="example__stats">
+          <li class="example__item example__item--decorated">
+            <span class="example__meaning">5 КГ</span>
+            <span class="example__parameter">снижение веса</span>
+          </li>
+          <li class="example__item example__item--decorated">
+            <span class="example__meaning">60 ДНЕЙ</span>
+            <span class="example__parameter">затрачено времени</span>
+          </li>
+        </ul>
+        <p class="example__cost">
+          <span class="example__cost-parameter">Затраты на питание:</span>
+          <span class="example__cost-meaning">15 000 РУБ.</span>
+        </p>
+        <div class="example__compare">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" alt="Кот до нашего питания." width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x">
+          </picture>
+          <button class="example__button" type="button">
+            <span class="visually-hidden">Посмотреть разницу</span>
+          </button>
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" alt="Кот после нашего питания." width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x">
+          </picture>
+        </div>
+      </section>
+    </div>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
@@ -153,32 +157,34 @@
 
   </main>
 
-  <footer class="footer">
-    <a class="footer__logo logo" href="index.html">
-      <img class="logo__picture logo__picture--text" src="img.svg" alt="Логотип." width="101" height="18">
-    </a>
-    <ul class="footer__social-list social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="#">
-          <span class="visually-hidden">В контакте</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--youtube" href="#">
-          <span class="visually-hidden">Youtube</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--tg" href="#">
-          <span class="visually-hidden">Telegram</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__htmlacademy-logo htmlacademy-logo" href="#">
-      <span class="htmlacademy-logo__text">HTMLacademy</span>
-      <span class="htmlacademy-logo__picture"></span>
-    </a>
-  </footer>
+  <div class="footer-wrapper">
+    <footer class="footer">
+      <a class="footer__logo logo" href="index.html">
+        <img class="logo__picture logo__picture--text" src="images/logo-text.svg" alt="Логотип." width="101" height="18">
+      </a>
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--tg" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__htmlacademy-logo htmlacademy-logo" href="#">
+        <span class="htmlacademy-logo__text">HTMLacademy</span>
+        <span class="htmlacademy-logo__picture"></span>
+      </a>
+    </footer>
+  </div>
 
 </body>
 

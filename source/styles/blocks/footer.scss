@@ -1,8 +1,22 @@
 .footer {
-  background-color: #f2f2f2;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
 }
 
 .footer__htmlacademy-logo {
-  margin-left: 50px;
   margin-bottom: 50px;
 }

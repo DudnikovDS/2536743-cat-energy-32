@@ -17,5 +17,5 @@
 }
 
 .catalog-add__list {
-  list-style-type: none;
+  @include list-reset;
 }

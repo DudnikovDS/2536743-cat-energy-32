@@ -1,8 +1,10 @@
 .hero {
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 27px;
   font-family: $font-secondary;
   color: $font-color-light;
   text-align: center;
-  background-color: $bg-color-opacity;
 }
 
 .hero__title {
@@ -28,4 +30,8 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.hero__picture {
+  display: block;
 }

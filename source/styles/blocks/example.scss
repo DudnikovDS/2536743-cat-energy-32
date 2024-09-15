@@ -1,11 +1,10 @@
 .example {
-  background-color: #eaeaea;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .example__stats {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
 }
 
 .example__title {
