@@ -1,3 +1,12 @@
+.catalog {
+  margin: 0 auto;
+  width: 280px;
+}
+
 .catalog__list {
+  @include list-reset;
+}
+
+.catalog-item__properties {
   @include list-reset;
 }

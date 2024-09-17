@@ -1,3 +1,15 @@
 .hero-wrapper {
-  background-color: $bg-color-opacity;
+  position: relative;
+  background-image: url("../../images/hero-image-mobile@1x.jpg");
+  background-size: auto 62.9%;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &::after {
+    @include pseudo(100%, 62.9%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient($bg-color-opacity 0% 100%);
+  }
 }
