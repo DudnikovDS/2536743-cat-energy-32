@@ -1,6 +1,15 @@
 .works {
   margin: 0 auto;
-  width: 280px;
+  margin-bottom: 49px;
+  width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+  }
 }
 
 .works__list {
@@ -10,6 +19,7 @@
 }
 
 .works__title {
+  margin: 0;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 36px;

@@ -25,20 +25,18 @@
       <img class="logo__picture logo__picture--text" src="images/logo-text.svg" alt="Логотип текст." width="101" height="18">
     </a>
     <nav class="header__nav main-navigation">
-      <!-- класс main-navigation__button--close меняет фон кнопки на "крестик", main-navigation__button--hidden скрывает кнопку -->
       <button class="main-navigation__button" type="button">
         <span class="visually-hidden">Показать меню</span>
       </button>
-      <!-- класс site-list--hidden скрывает меню -->
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--current" href="#" aria-current="page">Главная</a>
+      <ul class="main-navigation__list main-navigation__list--hidden">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--current" href="#" aria-current="page">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Подбор программы</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -48,7 +46,7 @@
 
     <div class="hero-wrapper">
       <section class="hero">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)" srcset="images/hero-fhoto-desktop@1x.png 1x, images/hero-fhoto-desktop@2x.png 2x" width="552" height="499" type="image/png">
@@ -185,6 +183,8 @@
       </a>
     </footer>
   </div>
+
+  <script src="scripts/index.js"></script>
 
 </body>
 

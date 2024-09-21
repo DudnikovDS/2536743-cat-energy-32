@@ -2,11 +2,24 @@
   position: relative;
   margin: 0 auto;
   padding-top: 27px;
-  width: 280px;
+  width: $mobile-content-width;
   font-family: $font-secondary;
   color: $font-color-light;
   text-align: center;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    width: $tablet-content-width;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 143px;
+    padding-bottom: 290px;
+    width: $desktop-content-width;
+    text-align: left;
+  }
 }
 
 .hero__title {
@@ -17,25 +30,64 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding-left: 90px;
     color: $font-color-secondary;
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-top: 81px;
+  }
 }
 
 .hero__slogan {
+  margin: 0;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    padding-left: 90px;
     color: $font-color-secondary;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-left: 80px;
   }
 }
 
 .hero__picture {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 143px;
+    left: 447px;
+  }
+}
+
+.hero__button {
+  padding: 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 295px;
+    left: 90px;
+    min-width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 456px;
+    left: 80px;
+  }
 }

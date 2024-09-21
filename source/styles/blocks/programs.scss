@@ -1,15 +1,42 @@
 .programs {
   margin: 0 auto;
-  width: 280px;
+  width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80px;
+    margin-bottom: 71px;
+    width: $desktop-content-width;
+  }
 }
 
 .programs__item {
   position: relative;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    margin-bottom: 0;
+    width: 570px;
+  }
 }
 
 .programs__title {
-  padding-left: 80px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 90px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
@@ -18,8 +45,28 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 214px;
+  }
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -64,11 +111,47 @@
     @include pseudo(50px, 53px);
     background-image: url("../../icons/stack.svg#cat-slim");
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 200px;
+      height: 211px;
+      top: 81px;
+      left: 445px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 52px;
+    }
+  }
 }
 
 .programs__item--pro {
   &::before {
     @include pseudo(67px, 50px);
     background-image: url("../../icons/stack.svg#cat-pro");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      left: 411px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 33px;
+    }
   }
 }
