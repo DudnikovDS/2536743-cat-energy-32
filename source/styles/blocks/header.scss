@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: $desktop-content-width;
     z-index: 4;
   }

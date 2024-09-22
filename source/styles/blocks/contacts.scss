@@ -1,9 +1,18 @@
+.contacts {
+  padding-top: 26px;
+}
+
 .contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
   margin: 0 auto;
-  width: 280px;
+  margin-bottom: 26px;
+  width: $mobile-content-width;
 }
 
 .contacts__slogan {
+  margin: 0;
   font-family: $font-secondary;
   color: $font-color-third;
   font-size: 16px;
@@ -17,6 +26,7 @@
 }
 
 .contacts__address {
+  width: 140px;
   line-height: 20px;
   font-style: normal;
 
