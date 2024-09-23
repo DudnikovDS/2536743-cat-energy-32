@@ -1,5 +1,5 @@
 .htmlacademy-logo {
-  display: block;
+  display: flex;
 }
 
 .htmlacademy-logo__picture {
@@ -12,6 +12,7 @@
 
 .htmlacademy-logo__text {
   display: block;
+  margin-right: 140px;
   font-family: $font-primary;
   color: $font-color-primary;
   font-size: 16px;
