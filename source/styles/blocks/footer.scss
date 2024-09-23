@@ -7,17 +7,3 @@
   padding-bottom: 40px;
   width: $mobile-content-width;
 }
-
-.footer__logo {
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &:focus-visible {
-    opacity: 0.8;
-  }
-}
