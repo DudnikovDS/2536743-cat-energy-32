@@ -44,8 +44,8 @@
 
   <main class="main">
 
-    <div class="hero-wrapper">
-      <section class="hero">
+    <section class="hero">
+      <div class="hero__wrapper">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
@@ -54,8 +54,8 @@
           <img class="hero__picture" src="images/hero-fhoto-mobile@1x.png" alt="Банка еды для кота Cat energy PRO курица." width="280" height="270" srcset="images/hero-fhoto-mobile@2x.png 2x">
         </picture>
         <a class="hero__button button button--primary" href="#">Подобрать программу</a>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="programs">
       <h2 class="visually-hidden">Программы</h2>
@@ -99,8 +99,8 @@
       </ul>
     </section>
 
-    <div class="example-wrapper">
-      <section class="example">
+    <section class="example">
+      <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -122,20 +122,24 @@
           <span class="example__cost-meaning">15 000 РУБ.</span>
         </p>
         <div class="example__compare">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" alt="Кот до нашего питания." width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x">
-          </picture>
+          <div class="example__image-container">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" alt="Кот до нашего питания." width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x">
+            </picture>
+          </div>
           <button class="example__button" type="button">
             <span class="visually-hidden">Посмотреть разницу</span>
           </button>
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" alt="Кот после нашего питания." width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x">
-          </picture>
+          <div class="example__image-container">
+            <picture class="example__image example__image--after">
+              <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" alt="Кот после нашего питания." width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x">
+            </picture>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>

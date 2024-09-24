@@ -1,5 +1,10 @@
 .logo {
   display: flex;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -13,3 +18,4 @@
     opacity: 0.8;
   }
 }
+

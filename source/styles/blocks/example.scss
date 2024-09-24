@@ -1,4 +1,8 @@
 .example {
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
   display: grid;
   row-gap: 20px;
   margin: 0 auto;
@@ -89,18 +93,29 @@
 
 .example__compare {
   grid-column: 1/-1;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+}
+
+.example__image-container {
+  min-height: 256px;
+  width: 138px;
 }
 
 .example__image {
   height: 100%;
+  max-width: 280px;
+}
+
+.example__image--after {
+  margin-left: -50%;
 }
 
 .example__button {
   position: relative;
   display: block;
   width: 4px;
-  height: 256px;
+  height: 100%;
   padding: 0;
   background-color: #666666;
   border: none;
