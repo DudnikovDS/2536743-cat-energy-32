@@ -1,14 +1,31 @@
 .contacts {
-  padding-top: 26px;
+  position: relative;
 }
 
 .contacts__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 70px;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    display: flex;
+    padding: 60px 78px 60px 80px;
+    width: 565px;
+    background-color: #ffffff;
+  }
 }
 
 .contacts__slogan {
@@ -20,6 +37,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    justify-self: start;
     font-size: 20px;
     line-height: 26px;
   }
@@ -31,6 +49,7 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    justify-self: end;
     line-height: 20px;
   }
 }
