@@ -1,9 +1,25 @@
 .subscribe {
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 96px;
+    padding-bottom: 104px;
+    width: $desktop-content-width;
+  }
 }
 
 .subscribe__title {
+  margin: 0;
+  margin-bottom: 32px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
@@ -11,6 +27,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -22,6 +39,8 @@
 }
 
 .subscribe__slogan {
+  margin: 0;
+  margin-bottom: 24px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 16px;
@@ -30,5 +49,53 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 752px;
+    text-align: center;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 752px;
+  }
+}
+
+.subscribe__email {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: $mobile-content-width;
+  font-family: $font-secondary;
+  color: $font-color-secondary;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 354px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 398px;
+  }
+}
+
+.subscribe__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
   }
 }
