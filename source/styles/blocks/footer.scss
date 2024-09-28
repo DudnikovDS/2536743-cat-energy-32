@@ -1,4 +1,8 @@
 .footer {
+  background-color: #f2f2f2;
+}
+
+.footer__wrapper {
   display: grid;
   gap: 40px;
   justify-items: center;
@@ -6,4 +10,25 @@
   padding-top: 40px;
   padding-bottom: 40px;
   width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
+}
+
+.footer__htmlacademy-logo {
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
 }

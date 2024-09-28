@@ -1,6 +1,8 @@
 .main__title {
   margin: 0 auto;
-  width: 280px;
+  margin-bottom: 41px;
+  padding-top: 27px;
+  width: $mobile-content-width;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 36px;
@@ -8,7 +10,15 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+    padding-top: 65px;
+    width: $tablet-content-width;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    width: $desktop-content-width;
   }
 }

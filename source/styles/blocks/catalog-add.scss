@@ -1,9 +1,11 @@
 .catalog-add {
   margin: 0 auto;
+  padding-top: 25px;
   width: $mobile-content-width;
 }
 
 .catalog-add__title {
+  margin: 0;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
