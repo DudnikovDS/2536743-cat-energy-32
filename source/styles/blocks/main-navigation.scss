@@ -1,3 +1,28 @@
+.main-navigation__list--hidden {
+  display: none;
+}
+
+.main-navigation__list {
+  @include list-reset;
+
+  position: absolute;
+  z-index: 4;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: flex-end;
+    width: auto;
+    transform: none;
+  }
+}
+
 .main-navigation__button {
   display: block;
   width: 24px;
@@ -6,6 +31,10 @@
   background-color: transparent;
   background-image: url("../../icons/stack.svg#button-open-menu");
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -26,6 +55,40 @@
   background-image: url("../../icons/stack.svg#button-close");
 }
 
-.main-navigation__button--hidden {
-  display: none;
+.main-navigation__link {
+  display: block;
+  font-family: $font-secondary;
+  color: $font-color-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+}
+
+.main-navigation__list--light {
+  @media (min-width: $desktop-width) {
+    color: $font-color-light;
+  }
 }

@@ -1,13 +1,21 @@
-.header__logo {
-  &:hover {
-    opacity: 0.8;
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 13px 0 14px;
+  width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    width: $tablet-content-width;
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-
-  &:focus-visible {
-    opacity: 0.8;
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: $desktop-content-width;
+    z-index: 4;
   }
 }
+

@@ -1,3 +1,19 @@
+.catalog-item {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  width: 280px;
+  min-height: 209px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .catalog-item__title {
   font-family: $font-secondary;
   color: $font-color-fourth;
@@ -6,18 +22,18 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .catalog-item__properties {
+  @include list-reset;
   font-size: 12px;
   line-height: 16px;
-  list-style-type: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
@@ -27,7 +43,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
@@ -43,7 +59,7 @@
     background-image: url("../../icons/stack.svg#plus");
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     &::before {
       width: 60px;
       height: 60px;

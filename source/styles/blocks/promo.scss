@@ -1,16 +1,71 @@
 .promo {
-  display: relative;
-  min-height: 290px;
-  background-color: $bg-color-opacity;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 187px 59px 20px 56px;
+  background-image:
+    linear-gradient(to right, $bg-color-opacity 0%, $bg-color-opacity 100%),
+    image-set(
+      url("../../images/promo-image-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/promo-image-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/promo-image-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/promo-image-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &::before {
     @include pseudo (80px, 83px);
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url("../../icons/stack.svg#gift");
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 71px 125px 69px 421px;
+    background-image:
+      linear-gradient(to right, $bg-color-opacity 0%, $bg-color-opacity 100%),
+      image-set(
+        url("../../images/promo-image-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/promo-image-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/promo-image-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/promo-image-tablet@2x.jpg") type("image/jpeg") 2x
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    padding: 185px 42px 43px;
+    background-image:
+      linear-gradient(to right, $bg-color-opacity 0%, $bg-color-opacity 100%),
+      image-set(
+        url("../../images/promo-image-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/promo-image-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/promo-image-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/promo-image-desktop@2x.jpg") type("image/jpeg") 2x
+      );
   }
 }
 
 .promo__description {
+  margin: 0;
   color: $font-color-light;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
 }

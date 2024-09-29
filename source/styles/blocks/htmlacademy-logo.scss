@@ -1,5 +1,11 @@
 .htmlacademy-logo {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .htmlacademy-logo__picture {

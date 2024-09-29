@@ -1,0 +1,14 @@
+.page-body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.page-body .page-body__header {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
