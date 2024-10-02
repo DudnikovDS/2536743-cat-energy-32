@@ -74,17 +74,19 @@
       background-color: $bg-color;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: #ffffff;
-    }
-  }
 }
 
 .main-navigation__list--light {
   @media (min-width: $desktop-width) {
     color: $font-color-light;
+  }
+}
+
+.main-navigation__link--current.main-navigation__list--light {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 

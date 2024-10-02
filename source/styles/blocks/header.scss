@@ -7,12 +7,12 @@
   width: $mobile-content-width;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding: 25px 0 0;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-top: 55px;
     width: $desktop-content-width;
     z-index: 4;
   }
