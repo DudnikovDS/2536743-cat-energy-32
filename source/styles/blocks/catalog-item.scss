@@ -1,4 +1,6 @@
 .catalog-item {
+  display: grid;
+  grid-template: "img    title" auto "img    properties" 1fr "button button" 1fr / 1fr 1fr;
   padding-top: 20px;
   padding-bottom: 25px;
   width: 280px;
@@ -15,6 +17,7 @@
 }
 
 .catalog-item__title {
+  grid-area: title;
   font-family: $font-secondary;
   color: $font-color-fourth;
   font-size: 16px;
@@ -28,7 +31,13 @@
   }
 }
 
+.catalog-item__link-img {
+  grid-area: img;
+}
+
 .catalog-item__properties {
+  grid-area: properties;
+
   @include list-reset;
   font-size: 12px;
   line-height: 16px;
@@ -39,6 +48,11 @@
   }
 }
 
+.catalog-item__property {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-item__more-description {
   font-size: 12px;
   line-height: 16px;
@@ -47,6 +61,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.catalog-item__button {
+  grid-area: button;
 }
 
 .catalog-item--more {

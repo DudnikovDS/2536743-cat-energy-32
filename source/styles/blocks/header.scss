@@ -6,6 +6,15 @@
   padding: 13px 0 14px;
   width: $mobile-content-width;
 
+  @media (max-width: calc($tablet-width - 1px)) {
+    &::before {
+      @include pseudo(100%, 1px);
+      top: 66px;
+      left: 0;
+      background-color: #ebebeb;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 25px 0 0;
     width: $tablet-content-width;
