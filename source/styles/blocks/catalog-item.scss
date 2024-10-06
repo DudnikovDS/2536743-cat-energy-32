@@ -1,6 +1,6 @@
 .catalog-item {
   display: grid;
-  grid-template: "img    title" auto "img    properties" 1fr "button button" 1fr / 1fr 1fr;
+  grid-template: "img    title" auto "img    properties" 1fr "button button" auto / 1fr 1fr;
   padding-top: 20px;
   padding-bottom: 25px;
   width: 280px;
@@ -18,6 +18,9 @@
 
 .catalog-item__title {
   grid-area: title;
+  margin: 0;
+  margin-bottom: 14px;
+  width: 76px;
   font-family: $font-secondary;
   color: $font-color-fourth;
   font-size: 16px;
@@ -37,6 +40,7 @@
 
 .catalog-item__properties {
   grid-area: properties;
+  margin-bottom: 17px;
 
   @include list-reset;
   font-size: 12px;
@@ -53,27 +57,22 @@
   justify-content: space-between;
 }
 
-.catalog-item__more-description {
-  font-size: 12px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
 .catalog-item__button {
   grid-area: button;
 }
 
 .catalog-item--more {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 78px;
 
   &::before {
     @include pseudo(30px, 30px);
-    top: 10px;
-    left: 40px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url("../../icons/stack.svg#plus");
   }
 
@@ -83,4 +82,25 @@
       height: 60px;
     }
   }
+}
+
+.catalog-item__title--more {
+  margin-bottom: 8px;
+  width: auto;
+}
+
+.catalog-item__more-description {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-item__button--more {
+  width: 100%;
 }

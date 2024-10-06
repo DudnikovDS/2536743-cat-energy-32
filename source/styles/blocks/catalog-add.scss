@@ -3,6 +3,10 @@
   padding-top: 25px;
   width: $mobile-content-width;
 
+  @media (max-width: calc($tablet-width - 1px)) {
+    border-top: 1px solid #ebebeb;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 74px;
     width: $tablet-content-width;
