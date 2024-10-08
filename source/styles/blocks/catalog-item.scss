@@ -7,19 +7,36 @@
   min-height: 209px;
 
   @media (min-width: $tablet-width) {
+    grid-template: "img" auto "title" auto "properties" 1fr "button" auto / 1fr;
+    padding: 10px 37px 40px;
     width: 324px;
     min-height: 511px;
+    background-image: linear-gradient(to top, #f2f2f2 84.15%, transparent 84.15%);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 10px 37px 40px;
+  }
+}
+
+.catalog-item__link {
+  grid-area: title;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
 .catalog-item__title {
   grid-area: title;
   margin: 0;
-  margin-bottom: 14px;
   width: 76px;
   font-family: $font-secondary;
   color: $font-color-fourth;
@@ -29,13 +46,24 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 136px;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 }
 
 .catalog-item__link-img {
   grid-area: img;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .catalog-item__properties {
@@ -53,9 +81,24 @@
 }
 
 .catalog-item__property {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo(100%, 1px);
+      bottom: -5px;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
+
 
 .catalog-item__button {
   grid-area: button;
@@ -77,7 +120,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    align-self: end;
+    padding-top: 160px;
+    min-height: 430px;
+    height: 430px;
+    background-image: none;
+    border: 2px solid #d3d3d3;
+
     &::before {
+      top: 50px;
       width: 60px;
       height: 60px;
     }
@@ -87,13 +138,18 @@
 .catalog-item__title--more {
   margin-bottom: 8px;
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .catalog-item__more-description {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: auto;
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
