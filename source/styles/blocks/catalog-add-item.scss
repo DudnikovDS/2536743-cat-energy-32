@@ -4,6 +4,7 @@
   row-gap: 14px;
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
 
 
   @media (min-width: $tablet-width) {
@@ -15,6 +16,10 @@
     grid-template-columns: 2fr 1fr 1fr 1fr;
     padding: 15px 0 17px;
   }
+}
+
+.catalog-add-item:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .catalog-add-item__title {
