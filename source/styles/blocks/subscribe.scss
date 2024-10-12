@@ -18,23 +18,50 @@
 }
 
 .subscribe__title {
+  position: relative;
   margin: 0;
   margin-bottom: 32px;
+  padding-right: 90px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 
+  &::after {
+    @include pseudo(88px, 2px);
+    top: 12px;
+    right: 0;
+    background-color: #68b738;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
+    padding-left: 40px;
+    padding-right: 440px;
     font-size: 32px;
     line-height: 32px;
+
+    &::after {
+      @include pseudo(436px, 2px);
+      top: 16px;
+      right: 0;
+      background-color: #68b738;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 850px;
     font-size: 40px;
     line-height: 40px;
+
+    &::after {
+      @include pseudo(850px, 2px);
+      top: 20px;
+      right: 0;
+      background-color: #68b738;
+    }
   }
 }
 
@@ -45,6 +72,7 @@
   color: $font-color-secondary;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -71,14 +99,15 @@
 }
 
 .subscribe__email {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-bottom: 16px;
   width: $mobile-content-width;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -94,6 +123,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: $mobile-content-width;
+  font-size: 20px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     width: 354px;
