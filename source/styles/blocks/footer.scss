@@ -22,12 +22,39 @@
 }
 
 .footer__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    position: relative;
+
+    &::after {
+      @include pseudo($mobile-content-width, 1px);
+      left: 0;
+      bottom: -20px;
+      background-color: #d9d9d9;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: start;
+    justify-content: start;
   }
 }
 
 .footer__htmlacademy-logo {
+  @media (max-width: calc($tablet-width - 1px)) {
+    position: relative;
+
+    &::before {
+      @include pseudo($mobile-content-width, 1px);
+      left: 0;
+      top: -20px;
+      background-color: #d9d9d9;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: end;
   }

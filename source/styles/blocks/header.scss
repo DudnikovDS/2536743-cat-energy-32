@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,13 +6,22 @@
   padding: 13px 0 14px;
   width: $mobile-content-width;
 
+  @media (max-width: calc($tablet-width - 1px)) {
+    &::before {
+      @include pseudo(100%, 1px);
+      top: 66px;
+      left: 0;
+      background-color: #ebebeb;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding: 25px 0 0;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-top: 55px;
     width: $desktop-content-width;
     z-index: 4;
   }

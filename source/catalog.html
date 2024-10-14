@@ -212,12 +212,16 @@
           <a class="catalog-item__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-item">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/cat-energy-slim-rice-500g-desktop@1x.png 1x, images/cat-energy-slim-rice-500g-desktop@2x.png 2x" width="169" height="210" type="image/png">
-            <source media="(min-width: 768px)" srcset="images/cat-energy-slim-rice-500g-tablet@1x.png 1x, images/cat-energy-slim-rice-500g-tablet@2x.png 2x" width="200" height="210" type="image/png">
-            <img class="catalog-item__image" src="images/cat-energy-slim-rice-500g-mobile@1x.png" alt="Изображение питания." width="140" height="107" srcset="images/cat-energy-slim-rice-500g-mobile@2x.png 2x">
-          </picture>
-          <h3 class="catalog-item__title">Cat Energy SLIM 500 г</h3>
+          <a class="catalog-item__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/cat-energy-slim-rice-500g-desktop@1x.png 1x, images/cat-energy-slim-rice-500g-desktop@2x.png 2x" width="169" height="210" type="image/png">
+              <source media="(min-width: 768px)" srcset="images/cat-energy-slim-rice-500g-tablet@1x.png 1x, images/cat-energy-slim-rice-500g-tablet@2x.png 2x" width="200" height="210" type="image/png">
+              <img class="catalog-item__image" src="images/cat-energy-slim-rice-500g-mobile@1x.png" alt="Изображение питания." width="140" height="107" srcset="images/cat-energy-slim-rice-500g-mobile@2x.png 2x">
+            </picture>
+          </a>
+          <a class="catalog-item__link" href="#">
+            <h3 class="catalog-item__title">Cat Energy SLIM 500 г</h3>
+          </a>
           <ul class="catalog-item__properties">
             <li class="catalog-item__property">
               <span class="catalog-item__property-name">Масса</span>
@@ -235,9 +239,9 @@
           <a class="catalog-item__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-item catalog-item--more">
-          <h3 class="catalog-item__title">Показать еще 100500 товаров</h3>
+          <h3 class="catalog-item__title catalog-item__title--more">Показать еще 100500 товаров</h3>
           <p class="catalog-item__more-description">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-item__button button button--secondary" href="#">Показать все</a>
+          <a class="catalog-item__button catalog-item__button--more button button--secondary" href="#">Показать все</a>
         </li>
       </ul>
     </section>
@@ -292,17 +296,14 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__slogan">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         <address class="contacts__address">
           <span class="contacts__address-name">ул. Большая<br>Конюшенная, д. 19/8</span>
           <span class="contacts__address-name">Санкт-Петербург</span>
         </address>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400" type="image/png">
-        <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400" type="image/png">
-        <img class="contacts__map" src="images/location-mobile@1x.png" alt="Место расположения на карте." width="320" height="362" srcset="images/location-mobile@2x.png 2x">
-      </picture>
+      <iframe class="contacts__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.162788892918!2d30.318955098400224!3d59.9390880300428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1728132823657!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
 
   </main>

@@ -18,3 +18,22 @@
     width: $desktop-content-width;
   }
 }
+
+.catalog__item {
+  @media (max-width: calc($tablet-width - 1px)) {
+    position: relative;
+
+    &::after {
+      @include pseudo(100%, 1px);
+      left: 0;
+      top: 0;
+      background-color: #ebebeb;
+    }
+  }
+}
+
+.catalog__item--more {
+  @media (max-width: calc($tablet-width - 1px)) {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
