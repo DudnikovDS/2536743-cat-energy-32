@@ -32,6 +32,10 @@
   opacity: 0.3;
 }
 
+.htmlacademy-logo:focus-visible {
+  outline: none;
+}
+
 .htmlacademy-logo:focus-visible .htmlacademy-logo__picture {
   background-color: #68b738;
 }

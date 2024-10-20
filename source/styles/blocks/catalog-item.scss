@@ -24,6 +24,19 @@
   grid-area: title;
   margin-bottom: 14px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: center;
     margin-bottom: 22px;
@@ -55,6 +68,19 @@
 
 .catalog-item__link-img {
   grid-area: img;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     justify-self: center;
@@ -98,7 +124,6 @@
     }
   }
 }
-
 
 .catalog-item__button {
   grid-area: button;

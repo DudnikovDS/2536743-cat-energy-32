@@ -244,6 +244,7 @@
 
   &:focus-visible {
     background-color: #68b738;
+    outline: none;
   }
 
   &::before {
@@ -266,6 +267,7 @@
 
   &:focus-visible::before {
     border-color: #68b738;
+    outline: none;
   }
 
   &::after {
@@ -287,5 +289,6 @@
 
   &:focus-visible::after {
     background-color: #68b738;
+    outline: none;
   }
 }

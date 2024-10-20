@@ -24,16 +24,11 @@
     position: relative;
 
     &::after {
-      @include pseudo(100%, 1px);
-      left: 0;
+      @include pseudo(100vh, 1px);
+      left: -400px;
       top: 0;
       background-color: #ebebeb;
     }
   }
 }
 
-.catalog__item--more {
-  @media (max-width: calc($tablet-width - 1px)) {
-    border-bottom: 1px solid #ebebeb;
-  }
-}

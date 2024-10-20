@@ -16,7 +16,7 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 33px;
     justify-content: flex-end;
     width: auto;
     transform: none;
@@ -27,20 +27,29 @@
   }
 }
 
+.main-navigation__item {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .main-navigation__link {
   position: relative;
   display: block;
-  padding: 22px 10px 24px;
+  margin: 0 auto;
+  padding: 22px 0 24px;
+  max-width: $mobile-content-width;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 10px 13px;
+    padding: 12px 0 13px;
     font-size: 18px;
     line-height: 24px;
     border: none;
@@ -55,19 +64,20 @@
     opacity: 0.6;
   }
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &:focus-visible {
     opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .main-navigation__link--current {
   @media (min-width: $tablet-width) {
     &::after {
-      @include pseudo(calc(100% - 20px), 2px);
+      @include pseudo(100%, 2px);
       bottom: 3px;
       left: 50%;
       transform: translateX(-50%);
@@ -107,12 +117,13 @@
     opacity: 0.6;
   }
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &:focus-visible {
     opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
