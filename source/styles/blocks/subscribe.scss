@@ -21,7 +21,8 @@
   position: relative;
   margin: 0;
   margin-bottom: 32px;
-  padding-right: 90px;
+  padding-right: 30px;
+  width: 192px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
@@ -29,37 +30,43 @@
   font-weight: 400;
 
   &::after {
-    @include pseudo(88px, 2px);
+    @include pseudo(100vh, 2px);
     top: 12px;
-    right: 0;
+    left: 192px;
     background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     padding-left: 40px;
-    padding-right: 440px;
+    padding-right: 30px;
+    width: 282px;
     font-size: 32px;
     line-height: 32px;
+    background-color: #ffffff;
 
     &::after {
-      @include pseudo(436px, 2px);
+      @include pseudo(200vh, 2px);
       top: 16px;
-      right: 0;
+      left: -400px;
       background-color: #68b738;
+      z-index: -2;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-right: 850px;
+    position: relative;
+    left: -40px;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 333px;
     font-size: 40px;
     line-height: 40px;
 
     &::after {
-      @include pseudo(850px, 2px);
+      @include pseudo(400vh, 2px);
       top: 20px;
-      right: 0;
+      left: -100vh;
       background-color: #68b738;
     }
   }
@@ -107,7 +114,16 @@
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border: 2px solid #444444;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -125,6 +141,7 @@
   width: $mobile-content-width;
   font-size: 20px;
   line-height: 26px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 354px;

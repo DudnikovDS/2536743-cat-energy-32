@@ -1,11 +1,8 @@
 .catalog-add {
+  position: relative;
   margin: 0 auto;
   padding-top: 25px;
   width: $mobile-content-width;
-
-  @media (max-width: calc($tablet-width - 1px)) {
-    border-top: 1px solid #ebebeb;
-  }
 
   @media (min-width: $tablet-width) {
     padding-top: 74px;
@@ -19,13 +16,21 @@
     padding-top: 71px;
     width: $desktop-content-width;
   }
+
+  &::after {
+    @include pseudo(100vh, 1px);
+    left: -400px;
+    top: 0;
+    background-color: #ebebeb;
+  }
 }
 
 .catalog-add__title {
   position: relative;
   margin: 0;
   margin-bottom: 36px;
-  padding-right: 34px;
+  padding-right: 30px;
+  width: 266px;
   font-family: $font-secondary;
   color: $font-color-secondary;
   font-size: 24px;
@@ -33,38 +38,44 @@
   font-weight: 400;
 
   &::after {
-    @include pseudo(34px, 2px);
+    @include pseudo(100vh, 2px);
     top: 12px;
-    right: 0;
+    left: 266px;
     background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     padding-left: 40px;
-    padding-right: 330px;
+    padding-right: 30px;
+    width: 381px;
     font-size: 32px;
     line-height: 32px;
+    background-color: #ffffff;
 
     &::after {
-      @include pseudo(327px, 2px);
+      @include pseudo(200vh, 2px);
       top: 16px;
-      right: 0;
+      left: -400px;
       background-color: #68b738;
+      z-index: -2;
     }
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    left: -40px;
     grid-column: 1/3;
-    padding-left: 0;
-    padding-right: 805px;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 456px;
     font-size: 40px;
     line-height: 40px;
 
     &::after {
-      @include pseudo(800px, 2px);
+      @include pseudo(400vh, 2px);
       top: 20px;
-      right: 0;
+      left: -100vh;
       background-color: #68b738;
     }
   }

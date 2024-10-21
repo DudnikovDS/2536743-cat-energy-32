@@ -90,6 +90,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/1;
+    grid-template-columns: 162px 162px;
     margin-bottom: 40px;
   }
 }
@@ -244,6 +245,7 @@
 
   &:focus-visible {
     background-color: #68b738;
+    outline: none;
   }
 
   &::before {
@@ -266,6 +268,7 @@
 
   &:focus-visible::before {
     border-color: #68b738;
+    outline: none;
   }
 
   &::after {
@@ -287,5 +290,6 @@
 
   &:focus-visible::after {
     background-color: #68b738;
+    outline: none;
   }
 }
