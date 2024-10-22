@@ -135,6 +135,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 78px;
+  min-height: 207px;
 
   &::before {
     @include pseudo(30px, 30px);

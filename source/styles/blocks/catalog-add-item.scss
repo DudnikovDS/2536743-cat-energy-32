@@ -3,14 +3,14 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 14px;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
 
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 3fr 2fr 1fr;
     row-gap: 25px;
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
   }
 
   @media (min-width: $desktop-width) {
