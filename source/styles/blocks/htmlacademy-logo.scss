@@ -5,6 +5,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    align-items: end;
     width: 168px;
   }
 }

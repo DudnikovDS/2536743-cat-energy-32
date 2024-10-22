@@ -88,13 +88,13 @@
   }
 }
 
-.main-navigation__list--light {
+.main-navigation__list--light .main-navigation__link {
   @media (min-width: $desktop-width) {
     color: $font-color-light;
   }
 }
 
-.main-navigation__link--current.main-navigation__list--light {
+.main-navigation__list--light .main-navigation__link--current {
   @media (min-width: $desktop-width) {
     &::after {
       background-color: #ffffff;

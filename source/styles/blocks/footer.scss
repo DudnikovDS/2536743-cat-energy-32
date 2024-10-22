@@ -13,11 +13,15 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: end;
+    padding-top: 55px;
+    padding-bottom: 55px;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
     width: $desktop-content-width;
   }
 }
